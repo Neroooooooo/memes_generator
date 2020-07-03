@@ -14,6 +14,7 @@ void Window::runProgram()
     {
         BeginDrawing();
 
+
         ClearBackground(Color{ 34,34,34 });
 
         DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);

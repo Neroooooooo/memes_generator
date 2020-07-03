@@ -1,7 +1,7 @@
 #include "Window.h"
 
 
-// un comentariuuuu
+// un comentariu
 int main()
 {
     Window window(1280, 720, "Meme Generator");

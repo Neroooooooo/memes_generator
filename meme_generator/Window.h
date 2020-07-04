@@ -14,6 +14,9 @@ public:
     Window(unsigned int, unsigned int, std::string);
     void runProgram();
 
+private:
+    void drawAllThings();
+    void loadAllThings();
 
 };
 

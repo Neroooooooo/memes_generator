@@ -10,17 +10,26 @@ Window::Window(unsigned int w, unsigned int h, std::string wN)
 
 void Window::runProgram()
 {
+
+    Vector2 ballPosition{ this->screenWidth/2, this->screenHeight/2 };
+
     while (!WindowShouldClose())
     {
         BeginDrawing();
-
-
         ClearBackground(Color{ 34,34,34 });
-
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
-
+        this->drawAllThings();
         EndDrawing();
     }
-
+    
     CloseWindow(); 
+}
+
+void Window::drawAllThings()
+{
+    DrawRectangle(0, 0, (float)(this->screenWidth / 4), this->screenHeight, Color{18, 18, 18,100});
+}
+
+void Window::loadAllThings()
+{
+   
 }
